@@ -1,31 +1,32 @@
-public class Queue_Java {
-  static class Queue {
-    static int arr[]; //create an array
-    static int size;
-    static int rear;
+public class L3_LinkedlistQueue {
 
-    //queue constructor
-    Queue(int n) {//n is the size of the array
-      arr = new int[n];
-      size = n;
-      rear = -1;
+  static class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+      this.data = data;
+      this.next = null;
     }
+  }
+  static class Queue {
+    static Node head = null;
+    static Node tail = null;
 
     // function to check if the queue is empty
     public static boolean isEmpty() {
-      return rear == -1;
+      return head == null && tail == null;
     }
 
     //Add element to the queue
     public static void add(int data) {
-      //check if the queue is full
-      if (rear == size-1) { 
-        System.out.println("Queue is full");
+      Node newNode = new Node(data);
+      if(head == null) {
+        head = tail = newNode;
         return;
       }
-
-      rear = rear + 1;
-      arr[rear] = data;
+      tail.next = newNode;
+      tail = newNode;
     }
 
     // Remove element from the queue
@@ -35,13 +36,14 @@ public class Queue_Java {
         return -1;
       }
 
-      //store the front element
-      int front = arr[0];
-      for(int i = 0; i < rear; i++) {
-        arr[i] = arr[i+1];
+      int front = head.data;
+      //single element
+      if(tail == head) {
+        tail = head = null;
+      } else {
+        head = head.next;
       }
-      //decrement the rear
-      rear = rear - 1;
+
       return front;
     }
 
@@ -52,12 +54,12 @@ public class Queue_Java {
         return -1;
       }
 
-      return arr[0];
+      return head.data;
     }
   }
 
   public static void main(String[] args) {
-    Queue q = new Queue(5);
+    Queue q = new Queue();
 
     q.add(1);
     q.add(2);

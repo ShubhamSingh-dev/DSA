@@ -10,7 +10,7 @@ public class IndianCoin {
       // Initialize the count of coins used
       int countOfCoins = 0;
       // Amount to be changed
-      int amount = 590;
+      int amount = 1051;
       // List to store the coins used to make the amount
       ArrayList<Integer> ans = new ArrayList<>();
 

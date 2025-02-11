@@ -16,6 +16,7 @@ public class TopViewOfTree {
         }   
     }    
 
+
     // Info class helps store a node along with its horizontal distance (hd)
     static class Info {     
         Node node;  // The node itself

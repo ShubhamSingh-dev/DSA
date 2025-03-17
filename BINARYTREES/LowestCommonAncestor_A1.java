@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LowestCommonAncestor {
+public class LowestCommonAncestor_A1 { // TC = O(n), SC = O(n)
   // Node class to represent each node in the binary tree
   static class Node {
     int data; // Data stored in the node

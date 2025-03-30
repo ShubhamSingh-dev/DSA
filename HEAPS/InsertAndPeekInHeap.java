@@ -17,6 +17,9 @@ public class InsertAndPeekInHeap {
         int temp = arr.get(x);
         arr.set(x, arr.get(par));
         arr.set(par, temp);
+
+        x = par; // Update x to the parent index
+        par = (x - 1) / 2; // Update par to the new parent index
       }
     }
 

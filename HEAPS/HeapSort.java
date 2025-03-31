@@ -29,7 +29,7 @@ public class HeapSort {
   }
 
   // Function to perform heap sort on an array
-  public static void heapSort(int arr[]) {
+  public static void heapSort(int arr[]) { // Tc = O(nlogn)
     // Step 1: Build a max-heap from the input array
     int n = arr.length;
     // Start from the last non-leaf node and heapify each node

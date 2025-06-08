@@ -1,2 +1,2 @@
-nDSA studying now
+DSA studying now
 and

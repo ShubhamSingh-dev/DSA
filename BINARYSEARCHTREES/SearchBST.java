@@ -1,4 +1,3 @@
-package BINARYSEARCHTREES;
 
 public class SearchBST {
       // Node class to represent each node in the binary search tree

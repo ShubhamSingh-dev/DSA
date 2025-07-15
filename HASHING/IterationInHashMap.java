@@ -8,12 +8,12 @@ public class IterationInHashMap {
     map.put("d", 4);
 
     //Iterate
-    //to get a set of pairs we use hm.entryset()
+    //2) to get a set of pairs we use hm.entryset()
     Set<String> keys = map.keySet();
     System.out.println("Keys: " + keys);
 
     //foreach loop to iterate
-    //we iterate on keys
+    //1) we iterate on keys
     for (String key : keys) {
       System.out.println(key + ": " + map.get(key));
     }

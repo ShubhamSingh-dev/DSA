@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Q4_Square_of_sortedArray {
   public int[] sortedSquares(int[] nums) {
-     int n = nums.length;
+    //  int n = nums.length;
      List<Integer> neg = new ArrayList<>();
      List<Integer> pos = new ArrayList<>();
 

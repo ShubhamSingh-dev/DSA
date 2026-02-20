@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class Q3_SubarrWithSumDivisibleByK {
   public int subarraysDivByK(int[] nums, int k) {
         int n = nums.length;

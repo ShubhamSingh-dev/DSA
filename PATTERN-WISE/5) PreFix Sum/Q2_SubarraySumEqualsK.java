@@ -8,11 +8,18 @@ public class Q2_SubarraySumEqualsK {
         int count = 0;
 
         for (int num : nums) {
+            // Add current element to sum so far.
             prefixSum += num;
 
+            // If currSum is equal to desired sum
+            // then a new subarray is found.
+            if(prefixSum == k) {
+                count++;
+            }
+            int val = prefixSum - k;
             // Check if there exists a prefixSum - k
-            if (map.containsKey(prefixSum - k)) {
-                count += map.get(prefixSum - k);
+            if (map.containsKey(val)) {
+                count += map.get(val);
             }
 
             // Store/update current prefixSum frequency
@@ -23,3 +30,7 @@ public class Q2_SubarraySumEqualsK {
 
     }
 }
+
+
+
+// ? If Didnt understand use GFG Website

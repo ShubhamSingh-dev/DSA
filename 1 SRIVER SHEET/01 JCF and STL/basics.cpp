@@ -13,7 +13,7 @@ void explainPair() {
     pair<pair<int, char>, int> pr3 = {{1, 'm'}, 4};
     cout << pr3.first.second << endl;
 }
-
+//! Dynamic Array
 void explainVector() {
     //For vector internal ds is array
     vector<int> vec; //vector is dynamic array
@@ -71,7 +71,7 @@ void explainVector() {
 
 
 }
-
+//!Linked List
 void explainList() {
     //For vector internal ds is linkedList
     // The difference between vector amd list is List allows push in front
@@ -150,7 +150,7 @@ void explainPriorityQueue() {
         cout << endl;
     } //prints 2 5 10
 }
-
+//!Set or TreeSet in java
 void explainSet() {
     //stores only unique elem in ascending order
     set<int> st;
@@ -206,7 +206,7 @@ void explainMuliSet() {
         cout << it << " ";
     }
 }
-
+//!unordered set or HashSet in java
 void explainUnorderedSet() {
     //no order basically random
     // but store unique elem
@@ -221,7 +221,7 @@ void explainUnorderedSet() {
 
     auto it = us.find(11);
 }
-
+//!TreeMap in java
 void explainMap() {
     //key value pair
     map<int, string> mp;
@@ -242,6 +242,7 @@ void explainMap() {
         cout << it->second << endl;
     }
 
+    //!Hashmap in java
     //unordered map -> no order // better to use
     unordered_map<int, string> ump;
 }

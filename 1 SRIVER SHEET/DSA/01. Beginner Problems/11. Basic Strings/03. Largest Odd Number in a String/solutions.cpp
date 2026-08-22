@@ -11,8 +11,8 @@ string main() {
             j = i;
             break;
         }
-        if(j == -1) return "";
     }
+    if(j == -1) return "";
 
     i = 0;
     while(i <= j && s[i] == '0') i++;
